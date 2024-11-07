@@ -11,14 +11,14 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: appOfApps
-    repoURL: 'https://github.com/redhat-composer-ai/appOfApps.git'
+    repoURL: 'https://github.com/poothia/appOfApps.git'
     targetRevision: HEAD
     helm:
       parameters:
         - name: application.defaultNamespace
           value: composer-ai-app
         - name: clusterDomain
-          value: <REPLACE_ME>
+          value: apps.rosa.rosahcpai.3fuu.p3.openshiftapps.com
   project: default
   syncPolicy:
     automated:
